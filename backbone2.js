@@ -1,6 +1,19 @@
 var Backbone = (function () {
 'use strict';
 
+// A module that can be mixed in to *any object* in order to provide it with
+// a custom event channel. You may bind a callback to an event with `on` or
+// remove with `off`; `trigger`-ing an event fires all callbacks in
+// succession.
+//
+//     var object = {};
+//     _.extend(object, Backbone.Events);
+//     object.on('expand', function(){ alert('expanded'); });
+//     object.trigger('expand');
+
+// Regular expression used to split event strings.
+
+
 const Events = {
 
 };
